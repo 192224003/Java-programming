@@ -1,0 +1,19 @@
+public class Missingnumbers {
+    public static void main(String[] args) {
+        int[] series = {1, 5, 11, 19};
+
+        System.out.println("Missing numbers in the series:");
+
+        for (int i = 1; i < series.length; i++) {
+            int prev = series[i - 1];
+            int curr = series[i];
+            int diff = curr - prev;
+
+            if (diff > 1) {
+                for (int j = 1; j < diff; j++) {
+                    System.out.println(prev + j);
+                }
+            }
+        }
+    }
+}

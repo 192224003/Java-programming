@@ -1,0 +1,14 @@
+public class Logicgates {
+    public static void main(String[] args) {
+        
+        boolean input1 = true;
+        boolean input2 = false;
+
+        boolean orOutput = input1 || input2;
+
+        boolean andOutput = input1 && input2;
+
+        System.out.println("Output of OR gate: " + orOutput);
+        System.out.println("Output of AND gate: " + andOutput);
+    }
+}
